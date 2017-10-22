@@ -5,12 +5,18 @@
         "en-US": {
           "summary": "Sample Short Description",
           "examplePhrases": [
-            "Alexa open hello world",
-            "Alexa tell hello world I am Jeff",
-            "Alexa tell hello world my name is Peter"
+            "Alexa, open hello world",
+            "Alexa, tell hello world I am Jeff",
+            "Alexa, tell hello world my name is Peter"
           ],
-          "name": "skillname-profile",
-          "description": "Sample Full Description"
+          "keywords": [
+            "hello",
+            "world"
+          ],          
+          "name": "Hello World",
+          "description": "Sample Full Description",
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-logo-108.png",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-logo-512.png"          
         }
       },
       "isAvailableWorldwide": true,
@@ -25,6 +31,14 @@
         }
       }
     },
-    "manifestVersion": "1.0"
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }    
   }
 }

@@ -1,6 +1,6 @@
 {
   "deploy_settings": {
-    "shazaml-dev": {
+    "default": {
       "skill_id": "",
       "was_cloned": false,
       "merge": {
@@ -8,7 +8,7 @@
           "apis": {
             "custom": {
               "endpoint": {
-                "uri": "skillname-profile"
+                "uri": "org-skillname-default"
               }
             }
           }
