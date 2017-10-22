@@ -1,5 +1,5 @@
-# Alexa Skill Kit CLI + Jovo Starter Template
-An Alexa Skill starter project template that uses the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) and the [Jovo Framework for Node.js](https://github.com/jovotech/jovo-framework-nodejs).
+# Alexa Skill/Google Action Starter Template using ASK CLI + Jovo Framework
+An starter project template for creating Alexa Skills and Google Actions and makes use of the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) and the [Jovo Framework for Node.js](https://github.com/jovotech/jovo-framework-nodejs). A single code base is hosted in Lambda and can be used by devices that support Amazon Alexa or Google Assistant.
 
 ## First-Time-Only Setup
 1. Install Node.js version 6.10 or confirm the correct version is installed:
@@ -27,6 +27,8 @@ An Alexa Skill starter project template that uses the [ASK CLI](https://develope
     ```
 
     If you used a profile other than the default one, there will be additional changes needed to use this template.
+
+
 
 
 ## Quick Setup
