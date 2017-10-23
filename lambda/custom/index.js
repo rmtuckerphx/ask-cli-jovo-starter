@@ -14,7 +14,8 @@ exports.handler = function(event, context, callback) {
     let intentMap = {
         'AMAZON.HelpIntent' : 'HelpIntent',
         'AMAZON.StopIntent' : 'StopIntent',
-        'AMAZON.CancelIntent' : 'StopIntent'
+        'AMAZON.CancelIntent' : 'StopIntent',
+        'given-name' : 'name'
     };
     app.setIntentMap(intentMap);
 
@@ -45,7 +46,14 @@ const handlers = {
     },
 
     'HelpIntent' : function() {
-        app.ask('You can try: "hello world" or "my name is John". Which do you want to do?', 'For a complete list of options, say "help"');
+        var assistantName;
+        if(app.isAlexaSkill()) {
+            assistantName = "alexa,";
+        } else if(app.isGoogleAction()) 
+        {
+            assistantName = "ok google,";
+        }
+        app.ask('You can try: ' + assistantName + ' "hello world" or '+ assistantName + ' "my name is John". Which do you want to do?', 'For a complete list of options, say "help"');
     },
     
     'HelloWorldIntent': function() {
